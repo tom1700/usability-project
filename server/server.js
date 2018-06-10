@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-app.post('/save', (req, res) => {
+app.post('usability/api/save', (req, res) => {
   fs.readFile('./results.json', 'utf8', (err, data) => {
     if (err){
       console.log(err);

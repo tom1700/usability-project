@@ -48,7 +48,8 @@ const router = new Router({
       name: 'Login',
       component: Login
     }
-  ]
+  ],
+  base: 'usability'
 })
 
 router.beforeEach((to, _, next) => {
