@@ -45,7 +45,6 @@ export default {
       this.addingComment = true
     },
     save() {
-      console.log(this.user.username)
       const newComment = {
         content: this.comment,
         date: new Date().toLocaleString('en-GB', {

@@ -1,0 +1,103 @@
+[
+  {
+    "startDate": "2018-06-10T12:08:57.923Z",
+    "endDate": "2018-06-10T12:09:06.774Z",
+    "pageViews": [
+      {
+        "startDate": "2018-06-10T12:08:57.893Z",
+        "routeName": "Comments",
+        "endDate": "2018-06-10T12:08:57.923Z"
+      },
+      {
+        "startDate": "2018-06-10T12:08:57.923Z",
+        "routeName": "Comments",
+        "endDate": "2018-06-10T12:08:59.128Z"
+      },
+      {
+        "startDate": "2018-06-10T12:08:59.128Z",
+        "routeName": "Login",
+        "endDate": "2018-06-10T12:09:01.767Z"
+      },
+      {
+        "startDate": "2018-06-10T12:09:01.767Z",
+        "routeName": "Comments",
+        "endDate": "2018-06-10T12:09:06.774Z"
+      }
+    ],
+    "clicks": [
+      {
+        "routeName": "Comments",
+        "element": "A#.nav-link"
+      },
+      {
+        "routeName": "Login",
+        "element": "BUTTON#.login-button"
+      },
+      {
+        "routeName": "Comments",
+        "element": "BUTTON#.add-comment"
+      },
+      {
+        "routeName": "Comments",
+        "element": "TEXTAREA#."
+      },
+      {
+        "routeName": "Comments",
+        "element": "BUTTON#.save"
+      }
+    ]
+  },
+  {
+    "startDate": "2018-06-10T12:13:07.395Z",
+    "endDate": "2018-06-10T12:13:17.293Z",
+    "duration": 9898,
+    "pageViews": [
+      {
+        "startDate": "2018-06-10T12:13:07.364Z",
+        "routeName": "Comments",
+        "endDate": "2018-06-10T12:13:07.395Z",
+        "duration": 31
+      },
+      {
+        "startDate": "2018-06-10T12:13:07.395Z",
+        "routeName": "Comments",
+        "endDate": "2018-06-10T12:13:10.324Z",
+        "duration": 2929
+      },
+      {
+        "startDate": "2018-06-10T12:13:10.324Z",
+        "routeName": "Login",
+        "endDate": "2018-06-10T12:13:11.845Z",
+        "duration": 1521
+      },
+      {
+        "startDate": "2018-06-10T12:13:11.845Z",
+        "routeName": "Comments",
+        "endDate": "2018-06-10T12:13:17.293Z",
+        "duration": 5448
+      }
+    ],
+    "clicks": [
+      {
+        "routeName": "Comments",
+        "element": "A#.nav-link"
+      },
+      {
+        "routeName": "Login",
+        "element": "BUTTON#.login-button"
+      },
+      {
+        "routeName": "Comments",
+        "element": "BUTTON#.add-comment"
+      },
+      {
+        "routeName": "Comments",
+        "element": "TEXTAREA#."
+      },
+      {
+        "routeName": "Comments",
+        "element": "BUTTON#.save"
+      }
+    ]
+  }
+]

@@ -6,6 +6,7 @@
         <span>password</span>
         <input type="password" v-model="password">
         <button class="login-button" v-on:click="save">Login</button>
+        <p>It's not even real login page. You can put whatever you want in here.</p>
       </div>
     </div>
 </template>

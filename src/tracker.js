@@ -1,3 +1,7 @@
+const getDuration = (startDate, endDate) => {
+  return endDate - startDate;
+};
+
 class Tracker {
   constructor() {
     this.startDate = null;
@@ -23,7 +27,7 @@ class Tracker {
   trackClick(routeName, element) {
     this.clicks.push({
       routeName,
-      element
+      element: `${element.tagName}#${element.id || ''}.${element.classList.value}`
     })
   }
   save() {
@@ -33,10 +37,30 @@ class Tracker {
       this.pageViews.slice(-1)[0].endDate = currentDate;
     }
     this.endDate = currentDate;
-    console.log('Start Date', this.startDate);
-    console.log('End Date', this.endDate);
-    console.log(this.pageViews);
-    console.log(this.clicks);
+
+    const data = {
+      startDate: this.startDate.toISOString(),
+      endDate: this.endDate.toISOString(),
+      duration: getDuration(this.startDate, this.endDate),
+      pageViews: this.pageViews.map(pageView => ({
+        ...pageView,
+        startDate: pageView.startDate.toISOString(),
+        endDate: pageView.endDate.toISOString(),
+        duration: getDuration(pageView.startDate, pageView.endDate)
+      })),
+      clicks: this.clicks
+    };
+    console.log(data);
+    const url = 'http://tomaszmoraws.nazwa.pl/api/save';
+
+    fetch(url, {
+      body: JSON.stringify(data),
+      headers: {
+        'Content-type': 'application/json',
+        'Accept': 'application/json',
+      },
+      method: 'POST',
+    })
   }
 }
 
