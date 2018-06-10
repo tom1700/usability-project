@@ -48,9 +48,9 @@ class Tracker {
         endDate: pageView.endDate.toISOString(),
         duration: getDuration(pageView.startDate, pageView.endDate)
       })),
-      clicks: this.clicks
+      clicks: this.clicks,
+      menuVariant: localStorage.getItem('currentHeader')
     };
-    console.log(data);
     const url = 'http://tomaszmoraws.nazwa.pl/usability/api/save';
 
     fetch(url, {
