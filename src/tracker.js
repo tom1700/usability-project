@@ -51,7 +51,7 @@ class Tracker {
       clicks: this.clicks
     };
     console.log(data);
-    const url = 'http://tomaszmoraws.nazwa.pl/api/save';
+    const url = 'http://tomaszmoraws.nazwa.pl/usability/api/save';
 
     fetch(url, {
       body: JSON.stringify(data),
